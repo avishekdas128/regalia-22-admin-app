@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fitsSystemWindows="true"
+    tools:context=".login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_bg_guitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/guitar"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_your_email"
+            android:textColor="?colorOnPrimary"
+            android:textSize="@dimen/text_size_36"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:backgroundTint="?colorOnPrimary"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:textColor="?colorOnPrimary"
+            android:textColorHint="@color/white_600"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginVertical="@dimen/margin_16"
+        android:paddingHorizontal="@dimen/padding_12"
+        android:paddingVertical="@dimen/padding_4"
+        android:text="@string/next"
+        android:textAllCaps="true"
+        android:textColor="?colorOnPrimary"
+        android:textSize="@dimen/text_size_24"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progress_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="?colorOnPrimary"
+        android:visibility="gone" />
+
+</RelativeLayout>

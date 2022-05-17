@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Regalia \'22</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="email">Email</string>
+    <string name="next">Next</string>
+    <string name="hello_guest">Hello, Guest!</string>
+    <string name="search_hint">Search with domain email</string>
+    <string name="countdown">Countdown</string>
+    <string name="event_start_date">19/05/2022</string>
+    <string name="total">Total</string>
+    <string name="manual_entry">QR code not working? <b>Click here for manual entry</b></string>
+    <string name="team_list">Looking for support? <b>Contact the team</b></string>
+    <string name="participants">Participants</string>
+    <string name="camera">Camera</string>
+    <string name="dummy_department">CSE</string>
+    <string name="dummy_count">800</string>
+    <string name="first_year">1st year</string>
+    <string name="department_cse">CSE</string>
+    <string name="department_ece">ECE</string>
+    <string name="department_it">IT</string>
+    <string name="department_ee">EE</string>
+    <string name="department_aeie">AEIE</string>
+    <string name="verification">Verification</string>
+    <string name="dummy_number">D4812D5S</string>
+    <string name="generate_pass">Generate Pass</string>
+    <string name="dummy_name">Robert Brown</string>
+    <string name="dummy_email">xyz@gmail.com</string>
+    <string name="dummy_roll">CSE2018/070</string>
+    <string name="dummy_allowed">3 allowed</string>
+    <string name="invalid_pass">Invitation pass already used!</string>
+    <string name="submit">Submit</string>
+    <string name="entry_success">Entry Successful!</string>
+    <string name="unique_confirmation_number">Unique Confirmation Number</string>
+    <string name="no_empty_id">Unique confirmation number cannot be empty!</string>
+</resources>

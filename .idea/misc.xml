@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable-xxhdpi/bg_gradient.xml" value="0.2425" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable-xxhdpi/bg_rounded_secondary.xml" value="0.124" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable-xxhdpi/ic_search.xml" value="0.124" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable/bg_card.xml" value="0.124" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable/bg_gradient.xml" value="0.2425" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable/bg_rounded_primary.xml" value="0.124" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable/ic_baseline_logout_24.xml" value="0.124" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable/ic_baseline_qr_code_scanner_24.xml" value="0.124" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable/ic_round_arrow_back_24.xml" value="0.124" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable/splash_background.xml" value="0.2425" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/activity_home.xml" value="0.1762917933130699" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/activity_qrscanner.xml" value="0.1762917933130699" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/activity_splash.xml" value="0.3625" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/activity_verification.xml" value="0.22" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/bottomsheet_manual_entry.xml" value="0.33" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/fragment_search.xml" value="0.1762917933130699" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/layout_year_stat.xml" value="0.16" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "135417946222",
+    "project_id": "regalia-22",
+    "storage_bucket": "regalia-22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135417946222:android:a392a408ee578c0f9dc67f",
+        "android_client_info": {
+          "package_name": "com.orangeink.regalia22"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135417946222-9djrrfs0epmq43r9j2o99nhk5dsr744k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.orangeink.regalia22",
+            "certificate_hash": "97b1c19944a1dc78ce212ba0a243006cb5d71603"
+          }
+        },
+        {
+          "client_id": "135417946222-ifst4g4v5f4i2bmg0jvkqh63ir0hl1tr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZgCL0dnjVMhqGlP8BWWbzzvdLlrnTS70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135417946222-ifst4g4v5f4i2bmg0jvkqh63ir0hl1tr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
