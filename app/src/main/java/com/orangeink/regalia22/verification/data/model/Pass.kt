@@ -12,5 +12,6 @@ data class Pass(
     @SerializedName("day_2_validity") var dayTwoValidity: String,
     @SerializedName("count_of_bands_day_1") var countDayOne: Int = 0,
     @SerializedName("count_of_bands_day_2") var countDayTwo: Int = 0,
-    @SerializedName("date") var date: String
+    @SerializedName("date") var date: String,
+    @SerializedName("message") var message: String?
 )

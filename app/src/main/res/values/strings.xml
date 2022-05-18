@@ -4,7 +4,7 @@
     <string name="email">Email</string>
     <string name="next">Next</string>
     <string name="hello_guest">Hello, Guest!</string>
-    <string name="search_hint">Search with domain email</string>
+    <string name="search_hint">Search with roll number</string>
     <string name="countdown">Countdown</string>
     <string name="event_start_date">19/05/2022</string>
     <string name="total">Total</string>
@@ -32,4 +32,8 @@
     <string name="entry_success">Entry Successful!</string>
     <string name="unique_confirmation_number">Unique Confirmation Number</string>
     <string name="no_empty_id">Unique confirmation number cannot be empty!</string>
+    <string name="resend_email">Resend Email</string>
+    <string name="no_result_found">No result found</string>
+    <string name="resend_email_success">Email sent successfully!</string>
+    <string name="no_empty_email">Email cannot be empty.</string>
 </resources>

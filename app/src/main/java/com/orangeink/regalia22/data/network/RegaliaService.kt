@@ -2,12 +2,11 @@ package com.orangeink.regalia22.data.network
 
 import com.orangeink.regalia22.common.SuccessResponse
 import com.orangeink.regalia22.login.data.model.Team
+import com.orangeink.regalia22.search.data.model.ResendEmailRequest
+import com.orangeink.regalia22.search.data.model.SearchRequest
 import com.orangeink.regalia22.verification.data.model.Pass
 import retrofit2.Response
-import retrofit2.http.GET
-import retrofit2.http.PATCH
-import retrofit2.http.Path
-import retrofit2.http.Query
+import retrofit2.http.*
 
 interface RegaliaService {
 
@@ -29,5 +28,13 @@ interface RegaliaService {
         @Path("id") id: String,
         @Query("count_of_bands") count: Int
     ): Response<SuccessResponse>
+
+    //Search
+    @POST("/search")
+    suspend fun search(@Body roll: SearchRequest): Response<Pass>
+
+    //Pass
+    @PATCH("/pass/resend_mail")
+    suspend fun resendMail(@Body resendEmailRequest: ResendEmailRequest): Response<SuccessResponse>
 
 }

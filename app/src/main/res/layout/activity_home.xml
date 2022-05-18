@@ -84,6 +84,7 @@
                     android:layout_marginEnd="@dimen/margin_16"
                     android:layout_toEndOf="@id/iv_close_search"
                     android:background="@null"
+                    android:fontFamily="sans-serif"
                     android:gravity="center_vertical"
                     android:hint="@string/search_hint"
                     android:imeOptions="actionSearch"
@@ -124,8 +125,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/margin_24"
-        app:backgroundTint="@color/purple_900"
         android:src="@drawable/ic_baseline_qr_code_scanner_24"
+        app:backgroundTint="@color/purple_900"
         app:tint="@color/white"
         tools:ignore="ContentDescription" />
 

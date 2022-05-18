@@ -6,6 +6,7 @@
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable-xxhdpi/bg_gradient.xml" value="0.2425" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable-xxhdpi/bg_rounded_secondary.xml" value="0.124" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable-xxhdpi/ic_search.xml" value="0.124" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable/bg_bottom_sheet.xml" value="0.134" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable/bg_card.xml" value="0.124" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable/bg_gradient.xml" value="0.2425" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable/bg_rounded_primary.xml" value="0.124" />
@@ -19,8 +20,10 @@
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/activity_splash.xml" value="0.3625" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/activity_verification.xml" value="0.22" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/bottomsheet_manual_entry.xml" value="0.33" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/bottomsheet_resend_email.xml" value="0.17074275362318841" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
-        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/fragment_search.xml" value="0.1762917933130699" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/fragment_search.xml" value="0.2" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/layout_empty.xml" value="0.1762917933130699" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/layout_year_stat.xml" value="0.16" />
       </map>
     </option>
