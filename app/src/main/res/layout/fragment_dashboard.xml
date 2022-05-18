@@ -338,7 +338,7 @@
                 android:weightSum="2">
 
                 <TextView
-                    android:id="@+id/tv_participants"
+                    android:id="@+id/tv_free_entry"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/margin_8"
@@ -348,7 +348,7 @@
                     android:includeFontPadding="false"
                     android:paddingHorizontal="@dimen/padding_16"
                     android:paddingVertical="@dimen/padding_12"
-                    android:text="@string/participants"
+                    android:text="@string/free_entry"
                     android:textAllCaps="true"
                     android:textColor="?colorOnPrimary"
                     android:textSize="@dimen/text_size_12" />

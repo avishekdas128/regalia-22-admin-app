@@ -1,10 +1,12 @@
 package com.orangeink.regalia22.home
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.github.mikephil.charting.data.Entry
@@ -15,6 +17,8 @@ import com.github.mikephil.charting.highlight.Highlight
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener
 import com.orangeink.regalia22.R
 import com.orangeink.regalia22.databinding.FragmentDashboardBinding
+import com.orangeink.regalia22.generate.pass.GeneratePassActivity
+import com.orangeink.regalia22.preferences.Prefs
 import com.orangeink.regalia22.qr.BottomSheetManualEntry
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
@@ -50,6 +54,17 @@ class DashboardFragment : Fragment() {
 
     private fun setListeners() {
         binding.swHome.setOnRefreshListener { }
+        binding.tvGeneratePass.setOnClickListener {
+            if (Prefs(requireActivity()).user?.role == "Admin") {
+                Intent(requireActivity(), GeneratePassActivity::class.java).apply {
+                    startActivity(this)
+                }
+            } else Toast.makeText(
+                requireActivity(),
+                getString(R.string.no_access),
+                Toast.LENGTH_SHORT
+            ).show()
+        }
         binding.tvManualEntry.setOnClickListener {
             val bottomSheet = BottomSheetManualEntry()
             bottomSheet.show(childFragmentManager, BottomSheetManualEntry::class.java.name)

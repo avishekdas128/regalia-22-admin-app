@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSecondary"
+        android:elevation="@dimen/padding_4">
+
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:text="@string/generate_pass"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="@dimen/text_size_18" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/top_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/padding_16">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:backgroundTint="?colorOnPrimary"
+                android:hint="@string/name"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:textColor="?colorOnPrimary"
+                android:textColorHint="@color/white_600"
+                android:textSize="@dimen/text_size_14" />
+
+            <EditText
+                android:id="@+id/et_roll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_name"
+                android:layout_marginTop="@dimen/margin_16"
+                android:backgroundTint="?colorOnPrimary"
+                android:hint="@string/roll_number"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textColor="?colorOnPrimary"
+                android:textColorHint="@color/white_600"
+                android:textSize="@dimen/text_size_14" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_roll"
+                android:layout_marginTop="@dimen/margin_16"
+                android:backgroundTint="?colorOnPrimary"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:textColor="?colorOnPrimary"
+                android:textColorHint="@color/white_600"
+                android:textSize="@dimen/text_size_14" />
+
+            <EditText
+                android:id="@+id/et_allowed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_email"
+                android:layout_marginTop="@dimen/margin_16"
+                android:backgroundTint="?colorOnPrimary"
+                android:hint="@string/allowed"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="?colorOnPrimary"
+                android:textColorHint="@color/white_600"
+                android:textSize="@dimen/text_size_14" />
+
+            <EditText
+                android:id="@+id/et_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_allowed"
+                android:layout_marginTop="@dimen/margin_16"
+                android:backgroundTint="?colorOnPrimary"
+                android:hint="@string/amount"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="?colorOnPrimary"
+                android:textColorHint="@color/white_600"
+                android:textSize="@dimen/text_size_14" />
+
+            <ProgressBar
+                android:id="@+id/progress_generate_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="?colorOnPrimary"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/margin_24"
+                android:background="@drawable/bg_rounded_primary"
+                android:backgroundTint="@color/purple_900"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="@dimen/padding_16"
+                android:paddingVertical="@dimen/padding_8"
+                android:text="@string/submit"
+                android:textAllCaps="true"
+                android:textColor="?colorOnPrimary"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

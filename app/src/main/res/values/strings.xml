@@ -36,4 +36,10 @@
     <string name="no_result_found">No result found</string>
     <string name="resend_email_success">Email sent successfully!</string>
     <string name="no_empty_email">Email cannot be empty.</string>
+    <string name="free_entry">Free Entry</string>
+    <string name="name">Name</string>
+    <string name="roll_number">Roll Number</string>
+    <string name="allowed">Allowed</string>
+    <string name="amount">Amount</string>
+    <string name="no_access">You do not have permission to access this!</string>
 </resources>

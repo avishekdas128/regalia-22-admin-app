@@ -1,6 +1,7 @@
 package com.orangeink.regalia22.data.network
 
 import com.orangeink.regalia22.common.SuccessResponse
+import com.orangeink.regalia22.generate.pass.data.model.GeneratePassRequest
 import com.orangeink.regalia22.login.data.model.Team
 import com.orangeink.regalia22.search.data.model.ResendEmailRequest
 import com.orangeink.regalia22.search.data.model.SearchRequest
@@ -36,5 +37,8 @@ interface RegaliaService {
     //Pass
     @PATCH("/pass/resend_mail")
     suspend fun resendMail(@Body resendEmailRequest: ResendEmailRequest): Response<SuccessResponse>
+
+    @POST("/pass")
+    suspend fun generatePass(@Body generatePassRequest: GeneratePassRequest): Response<SuccessResponse>
 
 }
