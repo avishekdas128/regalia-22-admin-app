@@ -43,8 +43,8 @@ class GeneratePassActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
             var amount = ""
-            if (!binding.etAmount.text.isNullOrBlank())
-                amount = binding.etAmount.text.toString()
+            if (binding.etAmount.text.isNullOrBlank())
+                amount = "FREE"
             hideKeyboard(this)
             binding.progressGeneratePass.visibility = View.VISIBLE
             viewModel.generatePass(

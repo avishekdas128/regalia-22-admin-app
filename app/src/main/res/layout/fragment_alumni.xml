@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/padding_16">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:backgroundTint="?colorOnPrimary"
+        android:hint="@string/name"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="?colorOnPrimary"
+        android:textColorHint="@color/white_600"
+        android:textSize="@dimen/text_size_14" />
+
+    <EditText
+        android:id="@+id/et_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name"
+        android:layout_marginTop="@dimen/margin_16"
+        android:backgroundTint="?colorOnPrimary"
+        android:hint="@string/passing_year"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColor="?colorOnPrimary"
+        android:textColorHint="@color/white_600"
+        android:textSize="@dimen/text_size_14" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_year"
+        android:layout_marginTop="@dimen/margin_16"
+        android:backgroundTint="?colorOnPrimary"
+        android:hint="@string/contact_number"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:textColor="?colorOnPrimary"
+        android:textColorHint="@color/white_600"
+        android:textSize="@dimen/text_size_14" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_phone"
+        android:layout_marginTop="@dimen/margin_16"
+        android:backgroundTint="?colorOnPrimary"
+        android:hint="@string/email"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="?colorOnPrimary"
+        android:textColorHint="@color/white_600"
+        android:textSize="@dimen/text_size_14" />
+
+    <EditText
+        android:id="@+id/et_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="@dimen/margin_16"
+        android:backgroundTint="?colorOnPrimary"
+        android:hint="@string/department"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="?colorOnPrimary"
+        android:textColorHint="@color/white_600"
+        android:textSize="@dimen/text_size_14" />
+
+    <ProgressBar
+        android:id="@+id/progress_generate_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="?colorOnPrimary"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@dimen/margin_24"
+        android:background="@drawable/bg_rounded_primary"
+        android:backgroundTint="@color/purple_900"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="@dimen/padding_16"
+        android:paddingVertical="@dimen/padding_8"
+        android:text="@string/submit"
+        android:textAllCaps="true"
+        android:textColor="?colorOnPrimary"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="bold" />
+
+</RelativeLayout>

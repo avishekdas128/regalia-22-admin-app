@@ -42,4 +42,8 @@
     <string name="allowed">Allowed</string>
     <string name="amount">Amount</string>
     <string name="no_access">You do not have permission to access this!</string>
+    <string name="guest_entry">Guest Entry</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="passing_year">Passing Year</string>
+    <string name="department">Department</string>
 </resources>

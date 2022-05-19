@@ -1,6 +1,7 @@
 package com.orangeink.regalia22.data.network
 
 import com.orangeink.regalia22.common.SuccessResponse
+import com.orangeink.regalia22.generate.free.data.model.FreePass
 import com.orangeink.regalia22.generate.pass.data.model.GeneratePassRequest
 import com.orangeink.regalia22.login.data.model.Team
 import com.orangeink.regalia22.search.data.model.ResendEmailRequest
@@ -40,5 +41,8 @@ interface RegaliaService {
 
     @POST("/pass")
     suspend fun generatePass(@Body generatePassRequest: GeneratePassRequest): Response<SuccessResponse>
+
+    @POST("/unpaid_pass")
+    suspend fun freePass(@Body freePass: FreePass): Response<SuccessResponse>
 
 }

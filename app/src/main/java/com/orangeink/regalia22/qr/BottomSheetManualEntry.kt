@@ -71,7 +71,6 @@ class BottomSheetManualEntry : BottomSheetDialogFragment() {
     }
 
     private fun initViews() {
-        isCancelable = false
         showKeyboard(requireContext(), binding.etId)
     }
 

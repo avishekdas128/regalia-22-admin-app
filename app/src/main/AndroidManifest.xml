@@ -52,6 +52,12 @@
             android:configChanges="orientation|keyboard"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".generate.free.ui.FreeEntryActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

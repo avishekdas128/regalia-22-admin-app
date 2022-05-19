@@ -14,6 +14,7 @@
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable/ic_baseline_qr_code_scanner_24.xml" value="0.124" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable/ic_round_arrow_back_24.xml" value="0.124" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/drawable/splash_background.xml" value="0.2425" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/activity_free_entry.xml" value="0.25" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/activity_generate_pass.xml" value="0.33" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/activity_home.xml" value="0.1762917933130699" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/activity_login.xml" value="0.25" />
@@ -22,8 +23,10 @@
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/activity_verification.xml" value="0.22" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/bottomsheet_manual_entry.xml" value="0.33" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/bottomsheet_resend_email.xml" value="0.17074275362318841" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/fragment_alumni.xml" value="0.1757852077001013" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/fragment_search.xml" value="0.2" />
+        <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/fragment_student.xml" value="0.1757852077001013" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/layout_empty.xml" value="0.1762917933130699" />
         <entry key="..\:/OrangeInk/Regalia22/app/src/main/res/layout/layout_year_stat.xml" value="0.16" />
       </map>

@@ -17,6 +17,7 @@ import com.github.mikephil.charting.highlight.Highlight
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener
 import com.orangeink.regalia22.R
 import com.orangeink.regalia22.databinding.FragmentDashboardBinding
+import com.orangeink.regalia22.generate.free.ui.FreeEntryActivity
 import com.orangeink.regalia22.generate.pass.GeneratePassActivity
 import com.orangeink.regalia22.preferences.Prefs
 import com.orangeink.regalia22.qr.BottomSheetManualEntry
@@ -54,6 +55,11 @@ class DashboardFragment : Fragment() {
 
     private fun setListeners() {
         binding.swHome.setOnRefreshListener { }
+        binding.tvFreeEntry.setOnClickListener {
+            Intent(requireActivity(), FreeEntryActivity::class.java).apply {
+                startActivity(this)
+            }
+        }
         binding.tvGeneratePass.setOnClickListener {
             if (Prefs(requireActivity()).user?.role == "Admin") {
                 Intent(requireActivity(), GeneratePassActivity::class.java).apply {

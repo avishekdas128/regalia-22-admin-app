@@ -66,7 +66,7 @@ class VerificationActivity : AppCompatActivity() {
         viewModel.pass.observe(this) {
             binding.progressVerification.visibility = View.GONE
             when (it.date) {
-                "18" -> {
+                "19" -> {
                     if (it.dayOneValidity.isNotEmpty() && (it.allowed == it.countDayOne))
                         invalidPass()
                     else
