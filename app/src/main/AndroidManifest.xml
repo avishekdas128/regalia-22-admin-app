@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".home.HomeActivity"
+            android:name=".home.ui.HomeActivity"
             android:configChanges="orientation|keyboard"
             android:exported="false"
             android:windowSoftInputMode="adjustNothing" />

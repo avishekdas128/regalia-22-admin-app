@@ -46,4 +46,5 @@
     <string name="contact_number">Contact Number</string>
     <string name="passing_year">Passing Year</string>
     <string name="department">Department</string>
+    <string name="no_data">No data</string>
 </resources>

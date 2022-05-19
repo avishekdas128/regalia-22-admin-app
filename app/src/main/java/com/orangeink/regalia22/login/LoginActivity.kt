@@ -7,8 +7,8 @@ import android.view.inputmethod.EditorInfo
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.orangeink.regalia22.home.HomeActivity
 import com.orangeink.regalia22.databinding.ActivityLoginBinding
+import com.orangeink.regalia22.home.ui.HomeActivity
 import com.orangeink.regalia22.login.viewmodel.LoginViewModel
 import com.orangeink.regalia22.preferences.Prefs
 import com.orangeink.regalia22.util.isValidEmail

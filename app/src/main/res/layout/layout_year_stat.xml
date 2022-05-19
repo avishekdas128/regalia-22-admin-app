@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
@@ -9,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:includeFontPadding="false"
-        android:text="@string/dummy_count"
+        android:text="@string/no_data"
         android:textAllCaps="true"
         android:textColor="@color/white"
         android:textSize="@dimen/text_size_18"
@@ -21,10 +22,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_total_count"
         android:layout_centerHorizontal="true"
-        android:text="@string/first_year"
         android:layout_marginTop="-2dp"
         android:includeFontPadding="false"
         android:textColor="@color/white"
-        android:textSize="@dimen/text_size_10" />
+        android:textSize="@dimen/text_size_10"
+        tools:text="@string/first_year" />
 
 </RelativeLayout>

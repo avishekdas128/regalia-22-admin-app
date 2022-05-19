@@ -1,4 +1,4 @@
-package com.orangeink.regalia22.home
+package com.orangeink.regalia22.home.ui.fragment
 
 import android.content.Intent
 import android.graphics.Color
@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
@@ -19,6 +20,7 @@ import com.orangeink.regalia22.R
 import com.orangeink.regalia22.databinding.FragmentDashboardBinding
 import com.orangeink.regalia22.generate.free.ui.FreeEntryActivity
 import com.orangeink.regalia22.generate.pass.GeneratePassActivity
+import com.orangeink.regalia22.home.viewmodel.DashboardViewModel
 import com.orangeink.regalia22.preferences.Prefs
 import com.orangeink.regalia22.qr.BottomSheetManualEntry
 import dagger.hilt.android.AndroidEntryPoint
@@ -30,6 +32,7 @@ import java.util.*
 class DashboardFragment : Fragment() {
 
     private lateinit var binding: FragmentDashboardBinding
+    private val viewModel: DashboardViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -43,18 +46,42 @@ class DashboardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initViews()
-        setupChart()
         setListeners()
+        subscribeToLiveData()
     }
 
     private fun initViews() {
         setupCountDown()
-        binding.tvDayLabel.text = "Day 1"
-        binding.tvTotalCount.text = "563"
+        viewModel.dashboard()
+    }
+
+    private fun subscribeToLiveData() {
+        viewModel.home.observe(viewLifecycleOwner) {
+            binding.progressHome.visibility = View.GONE
+            binding.swHome.isRefreshing = false
+
+            binding.tvDayLabel.text = it.label?.uppercase()
+            binding.tvTotalCount.text = it.total.toString()
+            binding.tvFreeEntryCount.text = "No Pass Entry Count = ${it.unpaidPassTotal}"
+
+            val data = arrayListOf(
+                it.categorized.cseCount,
+                it.categorized.eceCount,
+                it.categorized.itCount,
+                it.categorized.eeCount,
+                it.categorized.aeieCount
+            )
+            setupChart(data)
+        }
+        viewModel.error.observe(viewLifecycleOwner) {
+            binding.progressHome.visibility = View.GONE
+            binding.swHome.isRefreshing = false
+            Toast.makeText(requireActivity(), it, Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun setListeners() {
-        binding.swHome.setOnRefreshListener { }
+        binding.swHome.setOnRefreshListener { viewModel.dashboard() }
         binding.tvFreeEntry.setOnClickListener {
             Intent(requireActivity(), FreeEntryActivity::class.java).apply {
                 startActivity(this)
@@ -93,16 +120,14 @@ class DashboardFragment : Fragment() {
     }
 
 
-    private fun setupChart() {
+    private fun setupChart(data: ArrayList<Int>) {
         val pieChart = binding.chart
         val entries = ArrayList<PieEntry>()
         val label = "Department"
 
         //initializing data
-        var total = 0
-        for (i in 0..4) {
-            entries.add(PieEntry(24f, i))
-            total += 24
+        data.forEachIndexed { index, i ->
+            entries.add(PieEntry(i.toFloat(), index))
         }
 
         val pieColors = arrayListOf(
@@ -127,7 +152,7 @@ class DashboardFragment : Fragment() {
         pieChart.data = pieData
         pieChart.clipToPadding = false
         pieChart.invalidate()
-        pieChart.centerText = "$total"
+        pieChart.centerText = "${data[0]}"
         pieChart.setCenterTextSize(12f)
         pieChart.setCenterTextColor(ContextCompat.getColor(requireActivity(), R.color.white))
         pieChart.setDrawEntryLabels(false)
@@ -144,6 +169,7 @@ class DashboardFragment : Fragment() {
         pieChart.setOnChartValueSelectedListener(object : OnChartValueSelectedListener {
             override fun onValueSelected(e: Entry?, h: Highlight?) {
                 Timber.i(h?.x.toString())
+                pieChart.centerText = "${data[h?.x?.toInt()!!]}"
             }
 
             override fun onNothingSelected() {

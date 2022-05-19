@@ -4,8 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.orangeink.regalia22.home.HomeActivity
 import com.orangeink.regalia22.databinding.ActivitySplashBinding
+import com.orangeink.regalia22.home.ui.HomeActivity
 import com.orangeink.regalia22.login.LoginActivity
 import com.orangeink.regalia22.preferences.Prefs
 import dagger.hilt.android.AndroidEntryPoint

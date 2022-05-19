@@ -1,4 +1,4 @@
-package com.orangeink.regalia22.home
+package com.orangeink.regalia22.home.ui
 
 import android.Manifest
 import android.animation.Animator
@@ -10,6 +10,7 @@ import android.view.inputmethod.EditorInfo
 import androidx.appcompat.app.AppCompatActivity
 import com.orangeink.regalia22.R
 import com.orangeink.regalia22.databinding.ActivityHomeBinding
+import com.orangeink.regalia22.home.ui.fragment.DashboardFragment
 import com.orangeink.regalia22.login.LoginActivity
 import com.orangeink.regalia22.preferences.Prefs
 import com.orangeink.regalia22.qr.QRScannerActivity

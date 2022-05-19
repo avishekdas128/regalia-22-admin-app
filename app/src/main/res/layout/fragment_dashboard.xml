@@ -5,7 +5,7 @@
     android:id="@+id/sw_home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home.DashboardFragment">
+    tools:context=".home.ui.fragment.DashboardFragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -120,10 +120,24 @@
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/tv_manual_entry"
+                android:id="@+id/tv_free_entry_count"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rl_total_count"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/bg_rounded_primary"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="@dimen/padding_16"
+                android:paddingVertical="@dimen/padding_12"
+                android:textColor="?colorOnPrimary"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/tv_manual_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_free_entry_count"
                 android:layout_marginHorizontal="@dimen/margin_16"
                 android:layout_marginTop="@dimen/margin_16"
                 android:background="@drawable/bg_rounded_primary"
@@ -148,6 +162,7 @@
                     android:id="@+id/chart"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
                     android:backgroundTint="?colorSecondary" />
 
                 <LinearLayout
@@ -158,7 +173,8 @@
                     android:layout_marginTop="18dp"
                     android:layout_toEndOf="@id/chart"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:visibility="gone">
 
                     <LinearLayout
                         android:id="@+id/ll_first_row"
@@ -380,8 +396,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:elevation="10dp"
-                android:indeterminateTint="?colorOnPrimary"
-                android:visibility="gone" />
+                android:indeterminateTint="?colorOnPrimary" />
 
         </RelativeLayout>
 
